@@ -1,0 +1,61 @@
+#gridPanel{
+    width:480px;
+    height:480px;
+    margin:0 auto;
+    background-color:#bbada0;
+    border-radius:10px;
+    position:relative;
+}
+.grid,.cell{
+    width:100px;
+    height:100px;
+    border-radius:6px;
+}
+.grid{
+    float:left;
+    margin:16px 0 0 16px;
+    background-color:#ccc0b3;
+}
+.cell{
+    text-align:left;
+    /*line-height:100px;*/
+    color:#000;
+    font-size:40px;
+    position:absolute;
+}
+/*每一行拥有同样的top
+  每一列拥有同样的left*/
+#c00,#c01,#c02,#c03{top:16px;}
+#c00,#c10,#c20,#c30{left:16px;}
+#c10,#c11,#c12,#c13{top:132px;}
+#c01,#c11,#c21,#c31{left:132px;}
+#c20,#c21,#c22,#c23{top:248px;}
+#c02,#c12,#c22,#c32{left:248px;}
+#c30,#c31,#c32,#c33{top:364px;}
+#c03,#c13,#c23,#c33{left:364px;}
+.n2{background:url("img/2.jpg") no-repeat;  background-size: 100% 100%;}
+.n4{background:url("img/4.jpg") no-repeat;background-size: 100% 100%;}
+.n8{background:url("img/8.jpg") no-repeat;background-size: 100% 100%;}
+.n16{background:url("img/16.jpg") no-repeat;background-size: 100% 100%;}
+.n32{background:url("img/32.jpg") no-repeat;background-size: 100% 100%;}
+.n64{background:url("img/64.jpg") no-repeat;background-size: 100% 100%;}
+.n128{background:url("img/128.jpg") no-repeat;background-size: 100% 100%;}
+.n256{background:url("img/256.jpg") no-repeat;background-size: 100% 100%;}
+.n512{background:url("img/512.jpg") no-repeat;background-size: 100% 100%;}
+.n1024{background:url("img/1024.jpg") no-repeat;background-size: 100% 100%;}
+.n2048{background:url("img/2048.jpg") no-repeat;background-size: 100% 100%;}
+.n4096{background:url("img/4096.jpg") no-repeat;background-size: 100% 100%;}
+.n8192{background:url("img/8192.jpg") no-repeat;background-size: 100% 100%;}
+.n16384{background:url("img/16384.jpg") no-repeat;background-size: 100% 100%;}
+.n32768{background:url("img/32768.jpg") no-repeat;background-size: 100% 100%;}
+.n75536{background:url("img/75536.jpg") no-repeat;background-size: 100% 100%;}
+.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024,.n2048,.n4096,.n8192,.n16384,.n32768,.n75536{color:#fff;}
+.n1024,.n2048,.n4096,.n8192{font-size:36px;}
+.n16384,.n32768,.n75536{font-size: 32px;}
+/*显示分数的p元素*/
+p{width:480px;margin:0 auto;font-family:Arial;font-weight:bold;font-size:40px;padding-top:15px;}
+/*game over界面样式*/
+#gameOver{width:100%;height:100%;;position:absolute;top:0;left:0;display:none;}
+#gameOver div{width:100%;height:100%;background-color:#555;opacity:0.5;}
+#gameOver p{position:absolute;border-radius:10px;top:200px;left:40%;width:300px;height:200px;border:1px solid #edcf72;line-height:1.6em;text-align:center;background-color:#fff;}
+.button{padding:10px;background-color:#9f8d77;border-radius:6px;color:#fff;cursor:pointer;	}
